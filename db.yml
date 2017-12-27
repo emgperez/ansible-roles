@@ -1,0 +1,8 @@
+---
+# Playbook for database servers
+- hosts: databases
+  user: ansible
+  become: yes
+  roles:
+    - { role: mysql, mysql_bind: "{{ ansible_eth0.ipv4.address}}" }
+
