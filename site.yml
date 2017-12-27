@@ -1,4 +1,4 @@
 ---
 # site.yml: This is a sitewide playbook
 - import_playbook: www.yml
-   
+- import_playbook: db.yml   
