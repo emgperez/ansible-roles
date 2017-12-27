@@ -1,0 +1,7 @@
+---
+- name: add official nginx repository
+  yum: 
+    name: http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+
+- name: install nginx web server and ensure it is at the latest version
+  yum: name=nginx state=latest

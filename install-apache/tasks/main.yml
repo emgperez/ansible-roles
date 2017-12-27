@@ -1,0 +1,9 @@
+- name: Install Apache and PHP
+  yum: pkg={{ item }} state=present
+  with_items:
+    - httpd
+    - php
+    - php-pear
+    - php-gd
+    - elinks
+  notify: Restart Apache

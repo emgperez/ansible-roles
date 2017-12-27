@@ -1,0 +1,10 @@
+--- 
+- hosts: single
+  become: yes
+  roles:
+    - apache-webserver
+    - install_php
+    - customize-apache
+
+  
+
